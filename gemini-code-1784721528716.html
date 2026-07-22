@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Altera | Firma Profesional</title>
+    <style>
+        /* Estilos Generales y Limpios */
+        :root {
+            --primary: #0f172a;
+            --accent: #2563eb;
+            --text: #334155;
+            --bg-light: #f8fafc;
+            --white: #ffffff;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.6; color: var(--text); background-color: var(--bg-light); }
+
+        /* Navegación */
+        header { background: var(--white); position: sticky; top: 0; box-shadow: 0 1px 3px rgba(0,0,0,0.05); z-index: 100; }
+        nav { max-width: 1100px; margin: 0 auto; padding: 1.2rem 2rem; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 1.5rem; font-weight: 700; color: var(--primary); text-decoration: none; letter-spacing: -0.5px; }
+        .nav-links a { margin-left: 1.5rem; text-decoration: none; color: var(--text); font-weight: 500; font-size: 0.95rem; }
+        .nav-links a:hover { color: var(--accent); }
+
+        /* Hero / Portada */
+        .hero { max-width: 1100px; margin: 0 auto; padding: 5rem 2rem; text-align: center; }
+        .hero h1 { font-size: 3rem; color: var(--primary); margin-bottom: 1rem; line-height: 1.2; }
+        .hero p { font-size: 1.2rem; color: #64748b; max-width: 600px; margin: 0 auto 2rem auto; }
+        .btn { display: inline-block; background: var(--accent); color: var(--white); padding: 0.8rem 1.8rem; border-radius: 6px; text-decoration: none; font-weight: 600; transition: background 0.2s; }
+        .btn:hover { background: #1d4ed8; }
+
+        /* Secciones */
+        section { max-width: 1100px; margin: 0 auto; padding: 4rem 2rem; }
+        .section-title { text-align: center; font-size: 2rem; color: var(--primary); margin-bottom: 2.5rem; }
+
+        /* Servicios */
+        .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; }
+        .card { background: var(--white); padding: 2rem; border-radius: 8px; border: 1px solid #e2e8f0; }
+        .card h3 { color: var(--primary); margin-bottom: 0.8rem; }
+
+        /* Portfolio / Proyectos */
+        .projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+        .project-card { background: var(--white); border-radius: 8px; overflow: hidden; border: 1px solid #e2e8f0; }
+        .project-img { width: 100%; height: 200px; background-color: #cbd5e1; display: flex; align-items: center; justify-content: center; color: #64748b; font-weight: 500; }
+        .project-info { padding: 1.5rem; }
+
+        /* Contacto y Pie de página */
+        .contact { text-align: center; background: var(--primary); color: var(--white); border-radius: 12px; padding: 4rem 2rem; }
+        .contact h2 { color: var(--white); }
+        .contact p { margin-bottom: 2rem; color: #94a3b8; }
+        .btn-light { background: var(--white); color: var(--primary); }
+        .btn-light:hover { background: #f1f5f9; }
+
+        footer { text-align: center; padding: 2rem; font-size: 0.85rem; color: #94a3b8; margin-top: 3rem; }
+
+        /* Adaptabilidad Móvil */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.2rem; }
+            .nav-links { display: none; } /* Simplificado para móviles */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navegación -->
+    <header>
+        <nav>
+            <a href="#" class="logo">ALTERA</a>
+            <div class="nav-links">
+                <a href="#servicios">Servicios</a>
+                <a href="#proyectos">Proyectos</a>
+                <a href="#contacto">Contacto</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero / Presentación Principal -->
+    <div class="hero">
+        <h1>Soluciones estratégicas para tu negocio</h1>
+        <p>Acompañamos a empresas e iniciativas a escalar sus proyectos con un enfoque ágil, profesional y orientado a resultados.</p>
+        <a href="#contacto" class="btn">Hablar con nosotros</a>
+    </div>
+
+    <!-- Servicios -->
+    <section id="servicios">
+        <h2 class="section-title">Nuestros Servicios</h2>
+        <div class="grid-3">
+            <div class="card">
+                <h3>Consultoría Estratégica</h3>
+                <p>Analizamos las necesidades de tu empresa para ofrecer un plan de acción claro y optimizar tus recursos.</p>
+            </div>
+            <div class="card">
+                <h3>Gestión de Proyectos</h3>
+                <p>Ejecución integral de proyectos asegurando calidad, presupuestos ajustados y cumplimiento de plazos.</p>
+            </div>
+            <div class="card">
+                <h3>Desarrollo a Medida</h3>
+                <p>Soluciones personalizadas adaptadas a la realidad de tu sector, sin complejidades innecesarias.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proyectos / Portfolio -->
+    <section id="proyectos">
+        <h2 class="section-title">Proyectos Destacados</h2>
+        <div class="projects-grid">
+            
+            <!-- Proyecto 1 -->
+            <div class="project-card">
+                <div class="project-img">Imagen Proyecto 1</div>
+                <div class="project-info">
+                    <h3>Proyecto Alpha</h3>
+                    <p>Implementación de estrategia operativa para optimización de procesos internos.</p>
+                </div>
+            </div>
+
+            <!-- Proyecto 2 -->
+            <div class="project-card">
+                <div class="project-img">Imagen Proyecto 2</div>
+                <div class="project-info">
+                    <h3>Iniciativa Beta</h3>
+                    <p>Diseño e integración de arquitectura funcional para clientes del sector servicios.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto">
+        <div class="contact">
+            <h2>¿Tienes un proyecto en mente?</h2>
+            <p>Escríbenos directamente o agenda una consulta sin compromiso.</p>
+            <!-- Cambia el número por el tuyo en formato internacional (ej. 34600000000) -->
+            <a href="https://wa.me/34000000000" target="_blank" class="btn btn-light">Contactar por WhatsApp</a>
+            <br><br>
+            <p style="font-size: 0.9rem;">O envíanos un correo a: <strong>contacto@tu-dominio.com</strong></p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Altera. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
